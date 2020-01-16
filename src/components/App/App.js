@@ -1,3 +1,9 @@
+
+
+
+
+
+
 import React from 'react';
 import './App.css';
 import List from '../list/list';
@@ -9,6 +15,11 @@ import List from '../list/list';
   constructor(props){
     super(props);
     this.state={
+      term: " ",
+      items:[ ],
+    }
+
+    this.list={
       term: " ",
       items:[ ],
     }
@@ -24,7 +35,9 @@ import List from '../list/list';
     })
   }
  render(){
-   return(
+   
+   
+     return(
     <div>
     <form className="header" onClick={this.onsubmit} >
     <h2>My Checklist</h2>
@@ -38,5 +51,7 @@ import List from '../list/list';
 }
 export default App;
 
+
+ 
 
  
